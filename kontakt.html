@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunnfjord Naprapatsenter</title>
+    <link rel="icon" type="image/x-icon" href="/favicon/favicon.ico">
+    <link rel="stylesheet" href="style_kontakt.css">
+    <script src="https://kit.fontawesome.com/9edf9bd0a7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/naprapatsenteret logo1024_1 transparent.png" class="logo" alt="Sunnfjord Naprapatsenter logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Hjem</a></li>
+                <li><a href="#about">Om oss</a></li>
+                <li><a href="#services">Tjenester</a></li>
+                <li><a href="naprapati.html">Naprapati</a></li>
+                <li><a href="#bedrift">Bedrift</a></li>
+                <li><a href="#kontakt">Kontakt oss</a></li>
+                <li><a href="kontakt.html">Project One</a></li>
+                <i class="fas fa-circle-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Sunnfjord<br> <span>Naprapatsenter</span></p>
+            <h1>Anbefalt naprapat i Sunnfjord</h1>
+        </div>
+    </div>
+</div>
+<!----------Kontakt---------->
+<div id="kontakt">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Kontakt oss</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> post@fordenaprapatsenter.no</p>
+                <p><i class="fa-solid fa-square-phone"></i> 91 81 82 49</p>
+                <p><i class="fa-solid fa-map-location-dot"></i>Elvetorget - Naustdalsvegen 1B 6800 Førde</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/Naprapatsenteret"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://instagram.com/alexanderoenask?igshid=YmMyMTA2M2Y="><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://goo.gl/maps/vAhk8DHjkmy455Vz6"><i class="fa-solid fa-map-location-dot"></i></a>
+                </div>
+                <a href="images/Naprapatsenteret_LAV_1-6-page-001.jpg" download class="btn btn2">Last ned</a>
+            </div>
+            <div class="contact-right">
+                <form onsubmit="sendEmail(); reset(); return false;">
+                    <input type="text" name="Navn" placeholder="Ditt Navn" required>
+                    <input type="number" name="Telefon" placeholder="Din Mobil" required>
+                    <input type="email" name="E-post" placeholder="Din E-post" required>
+                    <textarea name="Melding" rows="6" placeholder="Din Melding"></textarea>
+                    <button type="submit" class="btn btn2">Send</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <section class="maps">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4874.453644438109!2d5.846000864671536!3d61.452309162465646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x461631627264be17%3A0x5a46dd64dd25c1d2!2sNaprapatsenteret-%20Naprapat%20Alexander%20Ask!5e0!3m2!1sno!2sno!4v1670193161238!5m2!1sno!2sno"  style="border:0" width="600" height="450" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+    <div class="copyright">
+        <p>Stolt medlem av Norges Naprapatforbund <i class="fa-solid fa-hands-holding-circle"></i></p>
+        <p>Copyright © Øen Invest</p>
+    </div>
+</div>
+
+
+<script>
+
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script>
+    function sendEmail(){
+        Email.send({
+            Host : "smtp.gmail.com",
+            Username : "sunnfjord.naprapatsenter@gmail.com",
+            Password : "Eeht4n8m433858622rtym",
+            To : 'henrikblablabla@gmail.com',
+            From : document.getElementById("email").value,
+            Subject : "Timebestilling Naprapatsenteret",
+            Body : "And this is the body"
+        }).then(
+        message => alert(message)
+        );
+    }
+</script>
+
+</body>
+</html>

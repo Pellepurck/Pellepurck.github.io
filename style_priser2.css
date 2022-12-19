@@ -1,0 +1,313 @@
+/*----------Head & Body-----------*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Gill Sans MT';
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: #080808;
+    color:#fff;
+
+}
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/IMG_0973.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#header_naprapati{
+    width: 100%;
+    height: 50vh;
+    background-image: url(images/Naprapat-888x500.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.container{
+    padding: 10px 10%;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+
+.logo{
+    width: 300px;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+nav ul li a::after{
+    content: "";
+    width: 0;
+    height: 3px;
+    background: #bfd741;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.header-text{
+    margin-top: 20%;
+    font-size: 30px;
+}
+.header-text h1{
+    font-size: 60px;
+    margin-top: 20px;
+}
+.header-text p span{
+    color: #bfd741;
+}
+/* -----------Priser------------ */
+.box{
+    width: 500px;
+    min-height: 500px;
+    padding: 50px;
+    background: #1f283b;
+    text-align: center;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    color: #555;
+    margin-top: 300px;
+}
+.box h2{
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.box h1{
+    font-size: 70px;
+    margin-bottom: 20px;
+    color: #ff2166;
+    font-weight: 500;
+}
+.box h1 span{
+    font-size: 22px;
+    color: #555;
+}
+.box b{
+    font-weight: 600;
+    margin-bottom: 20px;
+    display: block;
+}
+.box p{
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+.box button{
+    display: block;
+    margin: 30px auto;
+    border: 0;
+    outline: 0;
+    background: #ff2166;
+    color: #fff;
+    padding: 12px 40px;
+    border-radius: 30px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+.box img{
+    width: 300px;
+}
+.ribbon-wrap{
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    position: absolute;
+    top: -10px;
+    left: -10px;
+}
+.ribbon-wrap::before, .ribbon-wrap::after{
+    content: '';
+    width: 10px;
+    height: 10px;
+    background: #f2467b;
+    position: absolute;
+    z-index: -1;
+}
+.ribbon-wrap::before{
+    top: 0;
+    right: 0;
+}
+.ribbon-wrap::after{
+    bottom: 0;
+    left: 0;
+}
+.ribbon{
+    width: 225px;
+    font-size: 15px;
+    text-align: center;
+    padding: 8px 0;
+    background: #ff2166;
+    color: #fff;
+    position: absolute;
+    transform: rotate(-45deg);
+    right: -17%;
+    top: 29%;
+}
+
+/*------------Priser2--------------*/
+.container{
+    width: 100%;
+    min-height: 100vh;
+}
+.container h2{
+    color: #fff;
+    font-size: 32px;
+    padding: 50px 0;
+    text-align: center;
+}
+.price-row{
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 25px;
+}
+.price-col{
+    background: #1f283b;
+    padding: 10% 15%;
+    border-radius: 10px;
+    color: #fff;
+    text-align: center;
+}
+.price-col p{
+    font-size: 22px;
+}
+.price-col h3{
+    font-size: 44px;
+    margin: 20px 0 40px;
+    font-weight: 500;
+}
+.price-col h3 span{
+    font-size: 16px;
+}
+.price-col ul{
+    text-align: left;
+    margin: 20px 0;
+    color: #ddd;
+    list-style: none;
+}
+.price-col ul li{
+    margin: 15px 0;
+}
+.price-col ul li::before{
+    content: '\2022';
+    color: #e33058;
+    font-weight: bold;
+    margin-right: 8px;
+}
+.price-col button{
+    width: 100%;
+    padding: 14px 0;
+    background: transparent;
+    color: #fff;
+    font-size: 15px;
+    border: 1px solid #e33058;
+    border-radius: 6px;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: background 0.5s;
+}
+.price-col button:hover{
+    background: #e33058;
+}
+
+
+/* ------Copyright----- */
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #262626;
+    font-weight: 300;
+    margin-top: 20px;
+}
+.copyright i{
+    color: #bfd741;
+}
+
+@media only screen and (max-width: 600px){
+    #header{
+        background-image: url(images/IMG_0973_phone-background.png);
+    }
+    .header-text{
+        margin-top: 100%;
+        font-size: 16px;
+        width:auto
+    }
+    .header-text h1{
+        font-size: 30px;
+    }
+    nav .fas{
+        display: block;
+        font-size: 25px;
+        padding-left: 10px;
+    }
+    nav ul{
+        background: #bfd741;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+    nav ul .fas{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    .sub-title{
+        font-size: 40px;
+    }
+    .about-col-1, .about-col-2{
+        flex-basis: 100%;
+    }
+    .about-col-1{
+        margin-bottom: 30px;
+    }
+    .about-col-2{
+        font-size: 14px;
+    }
+    .tab-links{
+        font-size: 16px;
+        margin-right: 20px;
+    }
+    .contact-left, .contact-right{
+        flex-basis: 100%;
+    }
+    .copyright{
+        font-size: 14px;
+    }
+}

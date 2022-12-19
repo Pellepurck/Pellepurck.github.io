@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunnfjord Naprapatsenter</title>
+    <link rel="icon" type="image/x-icon" href="/favicon/favicon.ico">
+    <link rel="stylesheet" href="style_naprapati.css">
+    <script src="https://kit.fontawesome.com/9edf9bd0a7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/naprapatsenteret_logo1024_1_transparent_white_letters.png" class="logo" alt="Sunnfjord Naprapatsenter logo">
+            <ul id="sidemenu">
+                <li><a href="index.html#header">Hjem</a></li>
+                <li><a href="index.html#vår-klinikk">Om oss</a></li>
+                <li><a href="index.html#services">Tjenester</a></li>
+                <li><a href="priser2.html#priser">Priser</a></li>
+                <li><a href="naprapati.html">Naprapati</a></li>
+                <li><a href="index.html#bedrift">Bedrift</a></li>
+                <li><a href="#kontakt">Kontakt oss</a></li>
+                <li><a href="kontakt.html">Project One</a></li>
+                <i class="fas fa-circle-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+    </div>
+</div>
+
+<!-- Naprapati-banner -->
+<div id="naprapati-banner">
+    <div class="video-container">
+        <video playsinline loop controls poster="/images/IMG_0973.jpg" id="backVideo">
+        <source src="videos/NorgesNaprapatforbund_Naprapati.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+        </video>
+        <div class="sidebar">
+            <div>
+            <h1>Naprapati</h1>
+            <p>Ordet naprapati betyr å korrigere årsak til lidelse Ordet er satt sammen av det tsjekkiske ordet «napravit», som betyr å korrigere, og det greske ordet «pathos» som betyr «lidelse». Naprapati er en manuell behandlingsform som tar sikte på å normalisere problemer i bevegelsesapparatet.</p>
+            <h1>En enkel og trygg behandling</h1>
+            <p>Det er viktig for oss at det skal være enklest mulig for deg. Du trenger ikke ta med noe til behandlingene hos oss. Det kan være smart å ta på smidige klær som er enkle å bevege seg rundt i. </p>
+            <p>Etter behandlingen kan du bli trett eller øm på de stedene som vi har jobbet på. Dette er helt normalt. Drikk godt med vann og hold aktivitetsnivået lavere enn det du bruker. Hvor mange behandlinger som kreves er individuelt og bestemmes av hvor lenge du har hatt vondt og hvor mye egeninnsats du legger ned.</p>
+            <a href="#naprapati">Les Meir</a>
+            </div>
+        </div>
+        <img src="icons/play.png" id="btnicon">
+    </div>
+    <!-- MOBILE layout -->
+    <div class="naprapati-banner_mobile_layout">
+        <div class="container">
+            <div class="row-info">
+                <h1 class="sub-title_white">Naprapati</h1>
+                <div class="service-list">
+                    <div>
+                        <p>Ordet naprapati betyr å korrigere årsak til lidelse. Ordet er satt sammen av det tsjekkiske ordet «napravit», som betyr å korrigere, og det greske ordet «pathos» som betyr «lidelse». Naprapati er en manuell behandlingsform som tar sikte på å normalisere problemer i bevegelsesapparatet.</p>
+                        <h1>En enkel og trygg behandling</h1>
+                        <p>Det er viktig for oss at det skal være enklest mulig for deg. Du trenger ikke ta med noe til behandlingene hos oss. Det kan være smart å ta på smidige klær som er enkle å bevege seg rundt i.</p>
+                        <p>Etter behandlingen kan du bli trett eller øm på de stedene som vi har jobbet på. Dette er helt normalt. Drikk godt med vann og hold aktivitetsnivået lavere enn det du bruker. Hvor mange behandlinger som kreves er individuelt og bestemmes av hvor lenge du har hatt vondt og hvor mye egeninnsats du legger ned.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    let backVideo = document.getElementById("backVideo");
+    let btnicon = document.getElementById("btnicon");
+
+    btnicon.onclick = function(){
+        backVideo.style.display = "block";
+
+        if(backVideo.paused){
+            backVideo.play();
+            btnicon.src = "icons/pause.png";
+        }
+        else{
+            backVideo.pause();
+            btnicon.src = "icons/play.png";
+        }
+    }
+</script>
+
+<!-- Plager -->
+<div id="plager">
+    <div class="issues-list">
+        <ul>
+            <li><a href="#">Hodepine</a></li>
+            <li><a href="#">Krystallsyke</a></li>
+            <li><a href="#">Tennisalbue</a></li>
+            <li><a href="#">Smerte i brystryggen</a></li>
+            <li><a href="#">Skuldersmerte</a></li>
+            <li><a href="#">Plantar fascitt</a></li>
+            <li><a href="#">Tennisarm</a></li>
+            <li><a href="#">Isjias</a></li>
+            <li><a href="#">Løperkne</a></li>
+            <li><a href="#">Akillesplager</a></li>
+            <li><a href="#">Ruptur</a></li>
+            <li><a href="#">Nakkesmerte</a></li>
+            <li><a href="#">Migrene</a></li>
+            <li><a href="#">Slimposebetennelse</a></li>
+            <li><a href="#">Prolaps</a></li>
+            <li><a href="#">Trokanteritt</a></li>
+            <li><a href="#">Kjeven</a></li>
+        </ul>
+    </div>
+</div>
+<!-------------->
+
+<!----------Enkel og trygg behandling------->
+<div id="trygg-behandling">
+    <div class="container-wide">
+        <h1 class="sub-title_black">En enkel og <u>trygg</u> behandling</h1>
+        <div>
+            <p>Det er viktig for oss at det skal være enklest mulig for deg. Du trenger ikke ta med noe til behandlingene hos oss. Det kan være smart å ta på smidige klær som er enkle å bevege seg rundt i. </p>
+            <br> <br>
+            <p>Etter behandlingen kan du bli trett eller øm på de stedene som vi har jobbet på. Dette er helt normalt. Drikk godt med vann og hold aktivitetsnivået lavere enn det du bruker. Hvor mange behandlinger som kreves er individuelt og bestemmes av hvor lenge du har hatt vondt og hvor mye egeninnsats du legger ned.</p>
+        </div>
+    </div>
+</div>
+
+<!---------Videokonsultasjon------------->
+<div id="videokonsultasjon">
+    <div class="container-wide-img">
+        <h1 class="sub-title_white">
+            Ønsker du videokonsultasjon?</h1>
+            <h2>Kan du ikke komme til oss, men ønsker en behandling?</h2>
+            <div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
+            </div>
+        <div>
+            <img src="/images/video_call_layout.png" alt="Sunnfjord Naprapatsenter videokonsultasjon">
+        </div>
+    </div>
+</div>
+
+<!----------Kontakt---------->
+<div id="kontakt">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title_white">Kontakt oss</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> post@fordenaprapatsenter.no</p>
+                <p><i class="fa-solid fa-square-phone"></i> 91 81 82 49</p>
+                <p><i class="fa-solid fa-map-location-dot"></i>Elvetorget - Naustdalsvegen 1B 6800 Førde</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/Naprapatsenteret"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://instagram.com/alexanderoenask?igshid=YmMyMTA2M2Y="><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://goo.gl/maps/vAhk8DHjkmy455Vz6"><i class="fa-solid fa-map-location-dot"></i></a>
+                </div>
+                <a href="images/Naprapatsenteret_LAV_1-6-page-001.jpg" download class="btn btn2">Last ned</a>
+            </div>
+            <div class="contact-right">
+                <form onsubmit="sendEmail(); reset(); return false;">
+                    <input type="text" name="Navn" placeholder="Ditt Navn" required>
+                    <input type="number" name="Telefon" placeholder="Din Mobil" required>
+                    <input type="email" name="E-post" placeholder="Din E-post" required>
+                    <textarea name="Melding" rows="6" placeholder="Din Melding"></textarea>
+                    <button type="submit" class="btn btn2">Send</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <section class="maps">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4874.453644438109!2d5.846000864671536!3d61.452309162465646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x461631627264be17%3A0x5a46dd64dd25c1d2!2sNaprapatsenteret-%20Naprapat%20Alexander%20Ask!5e0!3m2!1sno!2sno!4v1670193161238!5m2!1sno!2sno"  style="border:0" width="600" height="450" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+    <div class="copyright">
+        <p>Stolt medlem av Norges Naprapatforbund <i class="fa-solid fa-hands-holding-circle"></i></p>
+        <p>Copyright © Øen Invest</p>
+    </div>
+</div>
+
+
+<script>
+
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script>
+    function sendEmail(){
+        Email.send({
+            Host : "smtp.gmail.com",
+            Username : "sunnfjord.naprapatsenter@gmail.com",
+            Password : "Eeht4n8m433858622rtym",
+            To : 'henrikblablabla@gmail.com',
+            From : document.getElementById("email").value,
+            Subject : "Timebestilling Naprapatsenteret",
+            Body : "And this is the body"
+        }).then(
+        message => alert(message)
+        );
+    }
+</script>
+
+</body>
+</html>
