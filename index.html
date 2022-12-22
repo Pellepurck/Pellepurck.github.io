@@ -13,12 +13,13 @@
 <div id="header">
     <div class="container">
         <nav id="navbar">
-            <img src="images/naprapatsenteret logo1024_1 transparent.png" class="logo" alt="Sunnfjord Naprapatsenter logo">
+            <a href="index.html#header">
+            <img src="images/naprapatsenteret logo1024_1 transparent.png" class="logo" alt="Sunnfjord Naprapatsenter logo"></a>
             <ul id="sidemenu">
                 <li><a href="#header">Hjem</a></li>
                 <li><a href="#vår-klinikk">Om oss</a></li>
                 <li><a href="#services">Tjenester</a></li>
-                <li><a href="priser2.html#priser">Priser</a></li>
+                <li><a href="priser.html#priser">Priser</a></li>
                 <li><a href="naprapati.html">Naprapati</a></li>
                 <li><a href="#bedrift">Bedrift</a></li>
                 <li><a href="#kontakt">Kontakt oss</a></li>
@@ -41,13 +42,13 @@
                 <img src="images/IMG_0975.jpg" alt="Vår klinikk">
             </div>
             <div class="about-col-2">
-                <h1 class="sub-title">Vår klinikk</h1>
+                <h1 class="sub-title_white">Vår klinikk</h1>
                 <p>Naprapaten behandler stort sett alle problem i muskler, ledd, sener og leddbånd. Dette kan være så vel akutte som kroniske smerter og funksjonsforstyrrelser i alle kroppens bevegelsesorgan. Er du i tvil så ta kontakt med din naprapat for råd.</p>
 
                 <div class="tab-titles">
                     <p class="tab-links active-link" onclick="opentab('behandlingsmetoder')">Behandlingsmetoder</p>
                     <p class="tab-links" onclick="opentab('spesialitet')">Spesialitet</p>
-                    <p class="tab-links" onclick="opentab('behandlingsforsikring')">Forsikring</p>
+                    <p class="tab-links" onclick="opentab('behandlingsforsikring')">Forsikrings</p>
                 </div>
                 <div class="tab-contents active-tab" id="behandlingsmetoder">
                     <ul>
@@ -92,7 +93,7 @@
 <!-- ---------Våre ulike behandlingsmetoder--------- -->
 <div id="services">
     <div class="container">
-        <h1 class="sub-title">Våre ulikebehandlings<br>metoder</h1>
+        <h1 class="sub-title_white">Våre ulikebehandlings<br>metoder</h1>
         <div class="services-list">
             <div>
                 <i class="fa-solid fa-spa"></i>
@@ -142,7 +143,7 @@
                 <img src="images/main_background.jpg" alt="Bedrift">
             </div>
             <div class="about-col-2">
-                <h1 class="sub-title">Bedrift</h1>
+                <h1 class="sub-title_white">Bedrift</h1>
                 <p>Muskel og skjelettplager er trolig det jobbrelaterte problemet som koster samfunnet mest. Beregninger med utgangspunkt i 2005-tall viser at så mye som 55 000 årsverk gikk tapt med bakgrunn i denne typen plager. Vi har gode løsninger for både små og store bedrifter.</p>
                 
                 <div class="tab-titles">
@@ -214,10 +215,12 @@
     <div class="container">
         <div class="row">
             <div class="contact-left">
-                <h1 class="sub-title">Kontakt oss</h1>
-                <p><i class="fa-solid fa-paper-plane"></i> post@fordenaprapatsenter.no</p>
-                <p><i class="fa-solid fa-square-phone"></i> 91 81 82 49</p>
-                <p><i class="fa-solid fa-map-location-dot"></i>Elvetorget - Naustdalsvegen 1B 6800 Førde</p>
+                <h1 class="sub-title_white">Kontakt oss</h1>
+                <a href="mailto:post@fordenaprapatsenter.no"><i class="fa-solid fa-paper-plane"></i>post@fordenaprapatsenter.no</a>
+                <br>
+                <a href="tel:91818249"><i class="fa-solid fa-square-phone"></i> 91 81 82 49</a>
+                <br>
+                <a href="https://elvetorget.no/portfolio-item/naprapatsenteret/" target="_blank"><i class="fa-solid fa-map-location-dot"></i>Elvetorget - Naustdalsvegen 1B 6800 Førde</a>
                 <div class="social-icons">
                     <a href="https://www.facebook.com/Naprapatsenteret"><i class="fa-brands fa-facebook"></i></a>
                     <a href="https://instagram.com/alexanderoenask?igshid=YmMyMTA2M2Y="><i class="fa-brands fa-instagram"></i></a>
@@ -230,6 +233,8 @@
                     <input type="text" name="Navn" placeholder="Ditt Navn" required>
                     <input type="number" name="Telefon" placeholder="Din Mobil" required>
                     <input type="email" name="E-post" placeholder="Din E-post" required>
+                    <label for="date-input">Ønsket time:</label>
+                    <input type="date" name="Dato" id="date-input">
                     <textarea name="Melding" rows="6" placeholder="Din Melding"></textarea>
                     <button type="submit" class="btn btn2">Send</button>
                 </form>
@@ -283,11 +288,10 @@
 </div>
 
 <!-- <----------Copyright--------------->
-    <div class="copyright">
-        <p>Stolt medlem av Norges Naprapatforbund <i class="fa-solid fa-hands-holding-circle"></i></p>
-        <p>Copyright © Øen Invest</p>
-    </div>
-
+<div class="copyright">
+    <p>Stolt medlem av Norges Naprapatforbund <i class="fa-solid fa-hands-holding-circle"></i></p>
+    <p>Copyright © Øen Invest</p>
+</div>
 
 <!-- <------------------Scripts-------------->
 <script>

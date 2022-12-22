@@ -77,12 +77,12 @@ nav ul li a:hover::after{
 .header-text p span{
     color: #bfd741;
 }
-/*------------Priser--------------*/
+/* -----------Priser------------ */
 .box{
     width: 500px;
     min-height: 500px;
     padding: 50px;
-    background: #fff;
+    background: #1f283b;
     text-align: center;
     border-radius: 10px;
     position: absolute;
@@ -135,9 +135,10 @@ nav ul li a:hover::after{
     width: 150px;
     height: 150px;
     overflow: hidden;
-    position: absolute;
-    top: -10px;
-    left: -10px;
+    position: relative;
+    top: -40px;
+    left: -50px;
+    margin-bottom: -60%;
 }
 .ribbon-wrap::before, .ribbon-wrap::after{
     content: '';
@@ -167,6 +168,75 @@ nav ul li a:hover::after{
     right: -17%;
     top: 29%;
 }
+
+/*------------Priser2--------------*/
+.container{
+    width: 100%;
+    min-height: 100vh;
+}
+.container h2{
+    color: #fff;
+    font-size: 32px;
+    padding: 50px 0;
+    text-align: center;
+}
+.price-row{
+    width: 90%;
+    max-width: 1400px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 25px;
+}
+.price-col{
+    background: #1f283b;
+    padding: 10% 15%;
+    border-radius: 10px;
+    color: #fff;
+    text-align: center;
+}
+.price-col p{
+    font-size: 22px;
+}
+.price-col h3{
+    font-size: 44px;
+    margin: 20px 0 40px;
+    font-weight: 500;
+}
+.price-col h3 span{
+    font-size: 16px;
+}
+.price-col ul{
+    text-align: left;
+    margin: 20px 0;
+    color: #ddd;
+    list-style: none;
+}
+.price-col ul li{
+    margin: 15px 0;
+}
+.price-col ul li::before{
+    content: '\2022';
+    color: #e33058;
+    font-weight: bold;
+    margin-right: 8px;
+}
+.price-col button{
+    width: 100%;
+    padding: 14px 0;
+    background: transparent;
+    color: #fff;
+    font-size: 15px;
+    border: 1px solid #e33058;
+    border-radius: 6px;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: background 0.5s;
+}
+.price-col button:hover{
+    background: #e33058;
+}
+
 
 /* ------Copyright----- */
 .copyright{

@@ -6,18 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sunnfjord Naprapatsenter</title>
     <link rel="icon" type="image/x-icon" href="/favicon/favicon.ico">
-    <link rel="stylesheet" href="style_kontakt.css">
+    <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/9edf9bd0a7.js" crossorigin="anonymous"></script>
 </head>
 <body>
 <div id="header">
     <div class="container">
-        <nav>
-            <img src="images/naprapatsenteret logo1024_1 transparent.png" class="logo" alt="Sunnfjord Naprapatsenter logo">
+        <nav id="navbar">
+            <a href="index.html#header">
+            <img src="images/naprapatsenteret logo1024_1 transparent.png" class="logo" alt="Sunnfjord Naprapatsenter logo"></a>
             <ul id="sidemenu">
                 <li><a href="index.html#header">Hjem</a></li>
-                <li><a href="index.html#about">Om oss</a></li>
+                <li><a href="index.html#vår-klinikk">Om oss</a></li>
                 <li><a href="index.html#services">Tjenester</a></li>
+                <li><a href="priser.html#priser">Priser</a></li>
                 <li><a href="naprapati.html">Naprapati</a></li>
                 <li><a href="index.html#bedrift">Bedrift</a></li>
                 <li><a href="#kontakt">Kontakt oss</a></li>
@@ -63,6 +65,48 @@
     <section class="maps">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4874.453644438109!2d5.846000864671536!3d61.452309162465646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x461631627264be17%3A0x5a46dd64dd25c1d2!2sNaprapatsenteret-%20Naprapat%20Alexander%20Ask!5e0!3m2!1sno!2sno!4v1670193161238!5m2!1sno!2sno"  style="border:0" width="600" height="450" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
+
+<!-----------Testimonial----------->
+<div class="testimonial">
+    <div class="container">
+        <div class="testimonial-text">
+            <div class="user-text active-text">
+                <i class="fa-solid fa-quote-left"></i>
+                <p>Tusen takk Alexander for ei fantastisk behandling av ei kjempevond stortå, eit vondt kne og kranglete rygg. Er god som ny.  Kan anbefale behandlinga , du er kjempeflink.</p>
+                <span>Alexander Øen Ask - PROFF TRIATLET</span>
+            </div>
+            <div class="user-text">
+                <i class="fa-solid fa-quote-left"></i>
+                <p>Alltid like hyggelig og ekstremt dyktig gått til flere naprapater med samme plage, men bare denna som klarer å fikse anbefales på det sterkaste!</p>
+                <span>Sedrik Ullebø - PROFF ATLET</span>
+            </div>
+            <div class="user-text">
+                <i class="fa-solid fa-quote-left"></i>
+                <p>Får kjempegod og effektiv behandling av legg- og hælskade. Anbefalast!</p>
+                <span>Cedrik Fonn Skåre - GoCart sjåfør</span>
+            </div>
+            <div class="user-text">
+                <i class="fa-solid fa-quote-left"></i>
+                <p>Ein meget dyktig naprapat</p>
+                <span>Frode Trælnes - Opplæringskonsulent Byggopp</span>
+            </div>
+            <div class="user-text">
+                <i class="fa-solid fa-quote-left"></i>
+                <p>Dyktig og seriøs kar.</p>
+                <span>Torgeir Mannebrekke - Røyrleggjarmestar</span>
+            </div>
+        </div>
+        <div class="testimonial-pic">
+            <img src="images/testimonial_1.png" class="user-pic active-pic" onclick="showReview()">
+            <img src="images/testimonial_2.png" class="user-pic" onclick="showReview()">
+            <img src="images/testimonial_3.png" class="user-pic" onclick="showReview()">
+            <img src="images/testimonial_4.png" class="user-pic" onclick="showReview()">
+            <img src="images/testimonial_5.png" class="user-pic" onclick="showReview()">
+        </div>
+    </div>
+</div>
+
+<!------------- Copyright ------------>
     <div class="copyright">
         <p>Stolt medlem av Norges Naprapatforbund <i class="fa-solid fa-hands-holding-circle"></i></p>
         <p>Copyright © Øen Invest</p>
@@ -70,6 +114,7 @@
 </div>
 
 
+<!-- <------------------Scripts-------------->
 <script>
 
 
@@ -100,21 +145,58 @@
     }
 
 </script>
-<script src="https://smtpjs.com/v3/smtp.js"></script>
 <script>
-    function sendEmail(){
-        Email.send({
-            Host : "smtp.gmail.com",
-            Username : "sunnfjord.naprapatsenter@gmail.com",
-            Password : "Eeht4n8m433858622rtym",
-            To : 'henrikblablabla@gmail.com',
-            From : document.getElementById("email").value,
-            Subject : "Timebestilling Naprapatsenteret",
-            Body : "And this is the body"
-        }).then(
-        message => alert(message)
-        );
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyp77gd72L0Wwo7eorn8roalQJpQqsG600LD0LDXtxYw_c5VW2UvknpV293JkOF4W536g/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Meldingen er sendt"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+<script>
+    var navbar = document.getElementById("navbar");
+    var sidemenu = document.getElementById("sidemenu");
+
+    window.onscroll = function(){
+        if(window.pageYOffset >= sidemenu.offsetTop){
+            navbar.classList.add("sticky");
+        }
+        else{
+            navbar.classList.remove("sticky");
+        }
     }
+
+</script>
+
+<script>
+
+    let userTexts = document.getElementsByClassName("user-text");
+    let userPics = document.getElementsByClassName("user-pic");
+
+    function showReview(){
+        for(userPic of userPics){
+            userPic.classList.remove("active-pic");
+        }
+        for(userText of userTexts){
+            userText.classList.remove("active-text");
+        }
+        let i = Array.from(userPics).indexOf(event.target);
+
+        userPics[i].classList.add("active-pic");
+        userTexts[i].classList.add("active-text");
+    }
+
 </script>
 
 </body>
