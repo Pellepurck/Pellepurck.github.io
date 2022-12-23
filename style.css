@@ -23,7 +23,7 @@ body{
 }
 
 .container{
-    padding: 10px 8%;
+    padding: 10px 10%;
 }
 
 nav{
@@ -123,7 +123,7 @@ nav ul li a:hover::after{
 .tab-titles{
     display:flex;
     margin: 20px 0 40px;
-    hyphens: auto;
+    hyphens: manual;
 }
 .tab-links{
     margin-right: 50px;
@@ -475,7 +475,7 @@ iframe{
     }
     .sub-title_white{
         font-size: 40px;
-        hyphens: auto;
+        hyphens: manual;
     }
     .about-col-1, .about-col-2{
         flex-basis: 100%;
