@@ -34,15 +34,17 @@
         </div>
     </div>
 </div>
-<!----------Kontakt---------->
+<!----------------Kontakt--------------->
 <div id="kontakt">
     <div class="container">
         <div class="row">
             <div class="contact-left">
-                <h1 class="sub-title">Kontakt oss</h1>
-                <p><i class="fa-solid fa-paper-plane"></i> post@fordenaprapatsenter.no</p>
-                <p><i class="fa-solid fa-square-phone"></i> 91 81 82 49</p>
-                <p><i class="fa-solid fa-map-location-dot"></i>Elvetorget - Naustdalsvegen 1B 6800 Førde</p>
+                <h1 class="sub-title_white">Kontakt oss</h1>
+                <a href="mailto:post@fordenaprapatsenter.no"><i class="fa-solid fa-paper-plane"></i>post@fordenaprapatsenter.no</a>
+                <br>
+                <a href="tel:91818249"><i class="fa-solid fa-square-phone"></i> 91 81 82 49</a>
+                <br>
+                <a href="https://elvetorget.no/portfolio-item/naprapatsenteret/" target="_blank"><i class="fa-solid fa-map-location-dot"></i>Elvetorget - Naustdalsvegen 1B 6800 Førde</a>
                 <div class="social-icons">
                     <a href="https://www.facebook.com/Naprapatsenteret"><i class="fa-brands fa-facebook"></i></a>
                     <a href="https://instagram.com/alexanderoenask?igshid=YmMyMTA2M2Y="><i class="fa-brands fa-instagram"></i></a>
@@ -51,10 +53,12 @@
                 <a href="images/Naprapatsenteret_LAV_1-6-page-001.jpg" download class="btn btn2">Last ned</a>
             </div>
             <div class="contact-right">
-                <form onsubmit="sendEmail(); reset(); return false;">
+                <form name="submit-to-google-sheet">
                     <input type="text" name="Navn" placeholder="Ditt Navn" required>
                     <input type="number" name="Telefon" placeholder="Din Mobil" required>
                     <input type="email" name="E-post" placeholder="Din E-post" required>
+                    <label for="date-input">Ønsket time:</label>
+                    <input type="date" name="Dato" id="date-input">
                     <textarea name="Melding" rows="6" placeholder="Din Melding"></textarea>
                     <button type="submit" class="btn btn2">Send</button>
                 </form>
@@ -65,6 +69,7 @@
     <section class="maps">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4874.453644438109!2d5.846000864671536!3d61.452309162465646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x461631627264be17%3A0x5a46dd64dd25c1d2!2sNaprapatsenteret-%20Naprapat%20Alexander%20Ask!5e0!3m2!1sno!2sno!4v1670193161238!5m2!1sno!2sno"  style="border:0" width="600" height="450" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
+</div>
 
 <!-----------Testimonial----------->
 <div class="testimonial">

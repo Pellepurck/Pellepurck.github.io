@@ -33,7 +33,7 @@ nav{
 }
 
 .logo{
-    width: 280px;
+    width: 300px;
 }
 
 nav.sticky{
@@ -93,9 +93,11 @@ nav ul li a:hover::after{
 /*--------------Vår Klinikk/Bedrift----------*/
 #bedrift{
     padding: 50px 0;
+    color: #ababab;
 }
 #vår-klinikk{
     padding: 50px 0;
+    color: #ababab;
 }
 .row{
     display: flex;
