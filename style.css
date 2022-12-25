@@ -854,7 +854,7 @@ iframe{
 }
 .popup{
     width: 400px;
-    background: #080808;
+    background: #fff;
     border-radius: 6px;
     position: fixed;
     top: calc(50% - -50px);
@@ -862,7 +862,7 @@ iframe{
     transform: translate(-50%,-50%) scale(0.1);
     text-align: center;
     padding: 0 30px 30px;
-    color: #fff;
+    color: #080808;
     visibility: hidden;
     transition: transform 0.4s, top 0.4s;
     z-index: 3;
