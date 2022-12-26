@@ -41,11 +41,10 @@
             <div>
             <h1>Velkommen til Sunnfjord Naprapatsenter</h1>
             <p>Hos vår naprapat i Førde, jobber vi allsidig og målrettet for å hjelpe deg til en bedre hverdag. Har du smerter i kroppen som følge av kroniske lidelser eller akutte skader, idrettsskader eller belastningslidelser? Da er vi her for deg. Vi har lang erfaring med behandlinger av et bredt spekter diagnoser og lidelser. Våre behandlinger består av leddjustering og ulike former for muskelterapi, som for eksempel massasje, muskeltøyning, triggerpunktsbehandling, akupunktur og mer.</p>
-            <p>Hos Majorstuen Naprapatsenter får du behandlingen du trenger for å bli smertefri. I tillegg gir vi veiledning om trening, livsstil og annet som kan bidra til at plagene ikke kommer tilbake. Ta en titt på videoen under for å bli bedre kjent med Majorstuen Naprapatsenter - din naprapat i Oslo</p>
+            <p>Hos Sunnfjord Naprapatsenter får du behandlingen du trenger for å bli smertefri. I tillegg gir vi veiledning om trening, livsstil og annet som kan bidra til at plagene ikke kommer tilbake.</p>
             <h1>Behandlinger hos vår naprapat</h1>
             <p>Vi hjelper deg med det som gjør vondt i kroppen din. Daglig møter vi pasienter med:  Hodepine, migrene, svimmelhet, krystallsyke, stiv nakke, smerter mellom skulderbladene, vonde skuldre, musearm, tennisalbue, lumbago, isjias, prolaps, hofteplager, knesmerter eller achiliessmerter, plantarfacit, og mye mer.</p>
-            <p>Vi bruker massasje for å løse opp musklene, leddjusteringer for å øke bevegeligheten i stive ledd, akupunktur for å løsne på muskelknuter, bindevevsmassasje for å minske spenninger i bindevevet og andre behandlinger for å rette opp i skadene. Vi kan også hjelpe deg med utforming av en skreddersydd trenings- og/eller kostholdsplan.</p>
-            <a href="#naprapati">Les Meir</a>
+            <a href="#naprapati" class="btn">Les Meir</a>
             </div>
         </div>
         <img src="icons/play.png" id="btnicon">
@@ -61,7 +60,6 @@
                         <p>Hos Sunnfjord Naprapatsenter får du behandlingen du trenger for å bli smertefri. I tillegg gir vi veiledning om trening, livsstil og annet som kan bidra til at plagene ikke kommer tilbake. Ta en titt på videoen over for å bli bedre kjent med hva en naprapat kan gjøre for deg - din naprapat i Sunnfjord</p>
                         <h1>Behandlinger hos vår naprapat</h1>
                         <p>Vi hjelper deg med det som gjør vondt i kroppen din. Daglig møter vi pasienter med:  Hodepine, migrene, svimmelhet, krystallsyke, stiv nakke, smerter mellom skulderbladene, vonde skuldre, musearm, tennisalbue, lumbago, isjias, prolaps, hofteplager, knesmerter eller achiliessmerter, plantarfacit, og mye mer.</p>
-                        <p>Vi bruker massasje for å løse opp musklene, leddjusteringer for å øke bevegeligheten i stive ledd, akupunktur for å løsne på muskelknuter, bindevevsmassasje for å minske spenninger i bindevevet og andre behandlinger for å rette opp i skadene. Vi kan også hjelpe deg med utforming av en skreddersydd trenings- og/eller kostholdsplan.</p>
                     </div>
                 </div>
             </div>
@@ -133,7 +131,7 @@
                 Ønsker du videokonsultasjon?</h1>
                 <h3>Vi er din lokale naprapat, sentralt i Sunnfjord – nå hjemme hos deg via nett!</h3>
                 <h3>– nå tilbyr vi videokonsultasjon!</h3>
-            <h2>Kan du ikke komme til oss, men ønsker en behandling?</h2>
+                <h2>Kan du ikke komme til oss, men ønsker en behandling?</h2>
                 <p>Du kan benytte dette tilbudet enten du er ny pasient eller har du gått til oss før. Vi ser et økende ønske etter vår kompetanse for de som av ulike grunner ikke kan komme seg til oss.</p>
                 <h2>Hva kan vi gjøre for deg gjennom skjermen?</h2>
                 <p>Har du fått akutt kink i ryggen og ikke kommer deg opp av sengen kan vi hjelpe deg. Vi har sett mange pasienter og kan raskt konstatere hvilke tiltak som er best for deg. Ønsker du råd og/eller treningsprogram for å komme deg et nivå eller to opp så er vi de rette for deg. Vi har lang erfaring med styrke, kondisjon og bevegelighetstrening.</p>
@@ -157,6 +155,21 @@
                 <a href="tel:91818249"><i class="fa-solid fa-square-phone"></i> 91 81 82 49</a>
                 <br>
                 <a href="https://elvetorget.no/portfolio-item/naprapatsenteret/" target="_blank"><i class="fa-solid fa-map-location-dot"></i>Elvetorget - Naustdalsvegen 1B 6800 Førde</a>
+                <div class="opening-hours">
+                    <button type="submit" class="btn" onclick="openPopup()">Åpningstider</button>
+                    <div class="popup" id="popup">
+                        <img src="/images/300x300.jpg" alt="åpningstider">
+                        <h2>Våre åpningstider</h2>
+                        <p>Mandag 09:00 - 15:30</p>
+                        <p>Tirsdag 09:00 - 15:30</p>
+                        <p>Onsdag 09:00 - 15:30</p>
+                        <p>Torsdag 09:00 - 15:30</p>
+                        <p>Fredag 09:00 - 15:30</p>
+                        <p>Lørdag STENGT</p>
+                        <p>Søndag STENGT</p>
+                        <button type="button" onclick="closePopup()">Lukk</button>
+                    </div>
+                </div>
                 <div class="social-icons">
                     <a href="https://www.facebook.com/Naprapatsenteret"><i class="fa-brands fa-facebook"></i></a>
                     <a href="https://instagram.com/alexanderoenask?igshid=YmMyMTA2M2Y="><i class="fa-brands fa-instagram"></i></a>
@@ -166,12 +179,12 @@
             </div>
             <div class="contact-right">
                 <form name="submit-to-google-sheet">
-                    <input type="text" name="Navn" placeholder="Ditt Navn" required>
-                    <input type="number" name="Telefon" placeholder="Din Mobil" required>
-                    <input type="email" name="E-post" placeholder="Din E-post" required>
+                    <input type="text" name="Navn" placeholder="Navn" required>
+                    <input type="number" name="Telefon" placeholder="Mobil" required>
+                    <input type="email" name="E-post" placeholder="E-post" required>
                     <label for="date-input">Ønsket time:</label>
                     <input type="date" name="Dato" id="date-input">
-                    <textarea name="Melding" rows="6" placeholder="Din Melding"></textarea>
+                    <textarea name="Melding" rows="6" placeholder="Melding"></textarea>
                     <button type="submit" class="btn btn2">Send</button>
                 </form>
                 <span id="msg"></span>
@@ -314,6 +327,18 @@
     }
 
 </script>
+<!-------Kontakt oss Åpningstider-------->
+<script>
+    let popup = document.getElementById("popup");
+    
+    function openPopup(){
+        popup.classList.add("open-popup");
+    }
+    function closePopup(){
+        popup.classList.remove("open-popup");
+    }
+    </script>
+<!--------------------------------------->
 
 </body>
 </html>

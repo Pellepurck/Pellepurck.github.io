@@ -182,33 +182,36 @@
 </div>
 
 <!-----------Work-list------------------>
-<div class="work-list">
-    <div class="work">
-        <img src="images/IMG_0974.jpg" alt="">
-        <div class="layer">
-            <h3>Din arbeidsplass</h3>
-            <p>Ønsker du at en naprapat fra vår klinikk kommer til arbeidsplassen din for å gi behandling til deg og dine medarbeidere? Kontakt oss gjerne for et uforpliktende tilbud og gratis prøvedag via post@fordenaprapatsenter.no</p>
-            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+<div id="work">
+    <div class="work-list">
+        <div class="work">
+            <img src="images/IMG_0974.jpg" alt="">
+            <div class="layer">
+                <h3>Din arbeidsplass</h3>
+                <p>Ønsker du at en naprapat fra vår klinikk kommer til arbeidsplassen din for å gi behandling til deg og dine medarbeidere? Kontakt oss gjerne for et uforpliktende tilbud og gratis prøvedag via post@fordenaprapatsenter.no</p>
+                <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+        </div>
+        <div class="work">
+            <img src="images/IMG_0979.jpg" alt="">
+            <div class="layer">
+                <h3>Ønsker du videokonsultasjon?</h3>
+                <p>Har du vondt i kroppen og vil unngå å reise til vårt naprapatsenter? Fortvil ikke! Nå kan du få en videokonsultasjon av en av våre dyktige naprapater. Trykk på knappen under for mer informasjon.</p>
+                <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+        </div>
+        <div class="work">
+            <img src="images/IMG_0965.jpg" alt="">
+            <div class="layer">
+                <h3>Helseforsikring fra alle forsikringsselskaper</h3>
+                <p>Det er viktig med rask behandling hvis du blir syk eller skadet. Da blir du fortere frisk og kommer raskere tilbake til en normal hverdag. Alle forsikringsselskaper tilbyr helseforsikring hos oss. Denne gir deg tilgang til bla annet rask MR, psykologhjelp, gratis online legehjelp og undersøkelse og behandling hos naprapat.</p>
+                <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
         </div>
     </div>
-    <div class="work">
-        <img src="images/IMG_0979.jpg" alt="">
-        <div class="layer">
-            <h3>Ønsker du videokonsultasjon?</h3>
-            <p>Har du vondt i kroppen og vil unngå å reise til vårt naprapatsenter? Fortvil ikke! Nå kan du få en videokonsultasjon av en av våre dyktige naprapater. Trykk på knappen under for mer informasjon.</p>
-            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
-        </div>
-    </div>
-    <div class="work">
-        <img src="images/IMG_0965.jpg" alt="">
-        <div class="layer">
-            <h3>Helseforsikring fra alle forsikringsselskaper</h3>
-            <p>Det er viktig med rask behandling hvis du blir syk eller skadet. Da blir du fortere frisk og kommer raskere tilbake til en normal hverdag. Alle forsikringsselskaper tilbyr helseforsikring hos oss. Denne gir deg tilgang til bla annet rask MR, psykologhjelp, gratis online legehjelp og undersøkelse og behandling hos naprapat.</p>
-            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
-        </div>
-    </div>
+    <a href="#" class="btn">Se mer</a>
 </div>
-<a href="#" class="btn">Se mer</a>
+
 
 <!----------------Kontakt--------------->
 <div id="kontakt">
@@ -222,7 +225,7 @@
                 <br>
                 <a href="https://elvetorget.no/portfolio-item/naprapatsenteret/" target="_blank"><i class="fa-solid fa-map-location-dot"></i>Elvetorget - Naustdalsvegen 1B 6800 Førde</a>
                 <div class="opening-hours">
-                    <button type="submit" class="btn-txt" onclick="openPopup()">Åpningstider</button>
+                    <button type="submit" class="btn" onclick="openPopup()">Åpningstider</button>
                     <div class="popup" id="popup">
                         <img src="/images/300x300.jpg" alt="åpningstider">
                         <h2>Våre åpningstider</h2>
@@ -245,12 +248,12 @@
             </div>
             <div class="contact-right">
                 <form name="submit-to-google-sheet">
-                    <input type="text" name="Navn" placeholder="Ditt Navn" required>
-                    <input type="number" name="Telefon" placeholder="Din Mobil" required>
-                    <input type="email" name="E-post" placeholder="Din E-post" required>
+                    <input type="text" name="Navn" placeholder="Navn" required>
+                    <input type="number" name="Telefon" placeholder="Mobil" required>
+                    <input type="email" name="E-post" placeholder="E-post" required>
                     <label for="date-input">Ønsket time:</label>
                     <input type="date" name="Dato" id="date-input">
-                    <textarea name="Melding" rows="6" placeholder="Din Melding"></textarea>
+                    <textarea name="Melding" rows="6" placeholder="Melding"></textarea>
                     <button type="submit" class="btn btn2">Send</button>
                 </form>
                 <span id="msg"></span>
