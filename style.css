@@ -886,18 +886,22 @@ iframe{
 .popup p{
     margin: 15px;
 }
-.popup button{
+.popup .btn{
     width: 100%;
-    margin-top: 50px;
+    margin: 50px 0 0 0;
     padding: 10px 0;
     background: #bfd741;
     color: #fff;
     border: 0;
     outline: none;
     font-size: 18px;
-    border-radius: 4px;
+    border-radius: 30px;
     cursor: pointer;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+.popup .btn:hover{
+    transform: none;
+    transition: none;
 }
 @media only screen and (max-width: 820px){
     .popup{
