@@ -546,7 +546,7 @@ iframe{
 }
 .sidebar div p{
     font-size:calc(1px + 0.9vw);
-    margin-top: 30px;
+    margin-top: 20px;
 }
 .sidebar .btn{
     background: #fff;
