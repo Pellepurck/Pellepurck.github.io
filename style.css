@@ -581,11 +581,7 @@ iframe{
         display: none;
     }
     #btnicon{
-        position: absolute;
-        width: 50px;
-        top: 45%;
-        left: 50%;
-        transform: translate(-50%,-50%);
+        display: none;
     }
     .naprapati-banner_mobile_layout{
         background: #bfd741;
