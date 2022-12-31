@@ -800,7 +800,7 @@ iframe{
 }
 .price-col{
     background: #1f283b;
-    padding: 5% 9%;
+    padding: 5% 8%;
     border-radius: 10px;
     color: #fff;
     text-align: center;
@@ -846,6 +846,10 @@ iframe{
 }
 
 /*----------Project One/Kontakt.html-------------*/
+#microsoft-booking{
+    margin: 50px;
+}
+
 .opening-hours .btn{
     background: #fff;
     color: #080808;
