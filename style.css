@@ -97,8 +97,8 @@ nav ul li a:hover::after{
     font-size: 20px;
     font-style: oblique;
     position: absolute;
-    bottom: 10px;
-    left: 10px;
+    bottom: 1%;
+    left: 1%;
 }
 .header-text-btn{
     display: flex;
