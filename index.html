@@ -19,11 +19,11 @@
                 <li><a href="#header">Hjem</a></li>
                 <li><a href="#vår-klinikk">Om oss</a></li>
                 <li><a href="#services">Tjenester</a></li>
-                <li><a href="priser.html#priser">Priser</a></li>
+                <li><a href="priser.html#behandling-priser">Priser</a></li>
                 <li><a href="naprapati.html">Naprapati</a></li>
                 <li><a href="#bedrift">Bedrift</a></li>
                 <li><a href="#kontakt">Kontakt oss</a></li>
-                <li><a href="kontakt.html">Project One</a></li>
+                <li><a href="kontakt.html#microsoft-booking">Project One</a></li>
                 <i class="fas fa-circle-xmark" onclick="closemenu()"></i>
             </ul>
             <i class="fas fa-bars" onclick="openmenu()"></i>
@@ -31,7 +31,15 @@
         <div class="header-text">
             <p>Sunnfjord<br> <span>Naprapatsenter</span></p>
             <h1>Anbefalt naprapat i Sunnfjord</h1>
+            <p class="header-info">Vi hjelper deg med det som gjør vondt i kroppen. <br> Kontakt oss i dag for en hyggelig prat, eller bestill time hos våre naprapater via knappene under.</p>
+            <div class="header-text-btn">
+            <a href="kontakt.html#microsoft-booking" class="btn">Book time</a>
+            <a href="kontakt.html#microsoft-booking" class="btn">Videokonsultasjon</a>
+            </div>
         </div>
+    </div>
+    <div class="header-text_name">
+        <p>DN- Alexander Ask</p>
     </div>
 </div>
 <!------------Vår Klinikk------------->
@@ -46,9 +54,9 @@
                 <p>Naprapaten behandler stort sett alle problem i muskler, ledd, sener og leddbånd. Dette kan være så vel akutte som kroniske smerter og funksjonsforstyrrelser i alle kroppens bevegelsesorgan. Er du i tvil så ta kontakt med din naprapat for råd.</p>
 
                 <div class="tab-titles">
-                    <p class="tab-links active-link" onclick="opentab('behandlingsmetoder')">Behandlingsmetoder</p>
+                    <p class="tab-links active-link" onclick="opentab('behandlingsmetoder')">Behandlings&shy;metoder</p>
                     <p class="tab-links" onclick="opentab('spesialitet')">Spesialitet</p>
-                    <p class="tab-links" onclick="opentab('behandlingsforsikring')">Forsikring</p>
+                    <p class="tab-links" onclick="opentab('behandlingsforsikring')">Forsikrings&shy;partnere</p>
                 </div>
                 <div class="tab-contents active-tab" id="behandlingsmetoder">
                     <ul>
@@ -62,14 +70,13 @@
                         <li><span>Ergonomisk Rådgiving</span></li>
                         <li><span>Trening</span></li>
                         <li><span>Dryneedling</span></li>
-                        <li><span>Akupunktur</span></li>
                     </ul>
                 </div>
                 <div class="tab-contents" id="spesialitet">
                     <ul>
                         <li><span>Massasje</span></li>
                         <li><span>Stretching</span></li>
-                        <li><span>Akupunktur</span></li>
+                        <li><span>Muskulær nålebehandling</span></li>
                         <li><span>Manipulasjonsbehandling</span></li>
                         <li><span>Triggerpunkter</span></li>
                         <li><span>Treningsveiledning</span></li>
@@ -93,7 +100,7 @@
 <!-- ---------Våre ulike behandlingsmetoder--------- -->
 <div id="services">
     <div class="container">
-        <h1 class="sub-title_white">Våre ulikebehandlings<br>metoder</h1>
+        <h1 class="sub-title_white">Våre ulike behandlings&shy;metoder</h1>
         <div class="services-list">
             <div>
                 <i class="fa-solid fa-spa"></i>
@@ -109,8 +116,8 @@
             </div>
             <div>
                 <i class="fa-solid fa-user-minus"></i>
-                <h2>Akupunktur</h2>
-                <p>Akupunktur er behandling med nåler. Vi benytter teknikker som Dry- Needling som har rot i vestlig medisin. Med akupunkturnålene kommer vi bedre til triggerpunkter og dype muskelspenninger.</p>
+                <h2>Dryneedling</h2>
+                <p>Muskulær nålebehandling/Dryneedling er behandling med nåler. Vi benytter teknikker som Dry- Needling som har rot i vestlig medisin. Med akupunkturnålene kommer vi bedre til triggerpunkter og dype muskelspenninger.</p>
                 <a href="#">Les mer</a>
             </div>
             <div>
@@ -167,7 +174,7 @@
                         <li><span>Vi kommer gjerne til din bedrift for et uforpliktende møte.</span></li>
                         <li><span> Vi kan hjelpe dere med ergonomisk gjennomgang, trening eller behandling.</span></li>
                         <li><span>Vi behandler muskel-og leddplager- både akutte og kontorrelaterte plager.</span></li>
-                        <li><span>Vi jobber med manipulasjon og mobilisering av ledd, triggerpunktsbehandling, massasje, akupunktur og spesielle tøyeteknikker.</span></li>
+                        <li><span>Vi jobber med manipulasjon og mobilisering av ledd, triggerpunktsbehandling, massasje, dryneedling og spesielle tøyeteknikker.</span></li>
                     </ul>
                 </div>
                 <div class="tab-contents" id="Helseforsikring">
@@ -182,33 +189,36 @@
 </div>
 
 <!-----------Work-list------------------>
-<div class="work-list">
-    <div class="work">
-        <img src="images/IMG_0974.jpg" alt="">
-        <div class="layer">
-            <h3>Din arbeidsplass</h3>
-            <p>Ønsker du at en naprapat fra vår klinikk kommer til arbeidsplassen din for å gi behandling til deg og dine medarbeidere? Kontakt oss gjerne for et uforpliktende tilbud og gratis prøvedag via post@fordenaprapatsenter.no</p>
-            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+<div id="work">
+    <div class="work-list">
+        <div class="work">
+            <img src="images/IMG_0974.jpg" alt="">
+            <div class="layer">
+                <h3>Din arbeidsplass</h3>
+                <p>Ønsker du at en naprapat fra vår klinikk kommer til arbeidsplassen din for å gi behandling til deg og dine medarbeidere? Kontakt oss gjerne for et uforpliktende tilbud og gratis prøvedag via post@fordenaprapatsenter.no</p>
+                <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+        </div>
+        <div class="work">
+            <img src="images/IMG_0979.jpg" alt="">
+            <div class="layer">
+                <h3>Ønsker du videokonsultasjon?</h3>
+                <p>Har du vondt i kroppen og vil unngå å reise til vårt naprapatsenter? Fortvil ikke! Nå kan du få en videokonsultasjon av en av våre dyktige naprapater. Trykk på knappen under for mer informasjon.</p>
+                <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+        </div>
+        <div class="work">
+            <img src="images/IMG_0965.jpg" alt="">
+            <div class="layer">
+                <h3>Helseforsikring</h3>
+                <p>Det er viktig med rask behandling hvis du blir syk eller skadet. Da blir du fortere frisk og kommer raskere tilbake til en normal hverdag. Vi samarbeider med alle forsikringsselskaper. Dette gir deg tilgang til rask MR, psykologhjelp, gratis online legehjelp med undersøkelse og behandling hos naprapat.</p>
+                <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
         </div>
     </div>
-    <div class="work">
-        <img src="images/IMG_0979.jpg" alt="">
-        <div class="layer">
-            <h3>Ønsker du videokonsultasjon?</h3>
-            <p>Har du vondt i kroppen og vil unngå å reise til vårt naprapatsenter? Fortvil ikke! Nå kan du få en videokonsultasjon av en av våre dyktige naprapater. Trykk på knappen under for mer informasjon.</p>
-            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
-        </div>
-    </div>
-    <div class="work">
-        <img src="images/IMG_0965.jpg" alt="">
-        <div class="layer">
-            <h3>Helseforsikring fra alle forsikringsselskaper</h3>
-            <p>Det er viktig med rask behandling hvis du blir syk eller skadet. Da blir du fortere frisk og kommer raskere tilbake til en normal hverdag. Alle forsikringsselskaper tilbyr helseforsikring hos oss. Denne gir deg tilgang til bla annet rask MR, psykologhjelp, gratis online legehjelp og undersøkelse og behandling hos naprapat.</p>
-            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
-        </div>
-    </div>
+    <a href="#" class="btn">Se mer</a>
 </div>
-<a href="#" class="btn">Se mer</a>
+
 
 <!----------------Kontakt--------------->
 <div id="kontakt">
@@ -221,6 +231,21 @@
                 <a href="tel:91818249"><i class="fa-solid fa-square-phone"></i> 91 81 82 49</a>
                 <br>
                 <a href="https://elvetorget.no/portfolio-item/naprapatsenteret/" target="_blank"><i class="fa-solid fa-map-location-dot"></i>Elvetorget - Naustdalsvegen 1B 6800 Førde</a>
+                <div class="opening-hours">
+                    <button type="submit" class="btn" onclick="openPopup()">Åpningstider</button>
+                    <div class="popup" id="popup">
+                        <img src="/images/300x300.jpg" alt="åpningstider">
+                        <h2>Våre åpningstider</h2>
+                        <p>Mandag 09:00 - 15:30</p>
+                        <p>Tirsdag 09:00 - 15:30</p>
+                        <p>Onsdag 09:00 - 15:30</p>
+                        <p>Torsdag 09:00 - 15:30</p>
+                        <p>Fredag 09:00 - 15:30</p>
+                        <p>Lørdag STENGT</p>
+                        <p>Søndag STENGT</p>
+                        <button class="btn" type="button" onclick="closePopup()">Lukk</button>
+                    </div>
+                </div>
                 <div class="social-icons">
                     <a href="https://www.facebook.com/Naprapatsenteret"><i class="fa-brands fa-facebook"></i></a>
                     <a href="https://instagram.com/alexanderoenask?igshid=YmMyMTA2M2Y="><i class="fa-brands fa-instagram"></i></a>
@@ -230,12 +255,12 @@
             </div>
             <div class="contact-right">
                 <form name="submit-to-google-sheet">
-                    <input type="text" name="Navn" placeholder="Ditt Navn" required>
-                    <input type="number" name="Telefon" placeholder="Din Mobil" required>
-                    <input type="email" name="E-post" placeholder="Din E-post" required>
+                    <input type="text" name="Navn" placeholder="Navn" required>
+                    <input type="number" name="Telefon" placeholder="Mobil" required>
+                    <input type="email" name="E-post" placeholder="E-post" required>
                     <label for="date-input">Ønsket time:</label>
                     <input type="date" name="Dato" id="date-input">
-                    <textarea name="Melding" rows="6" placeholder="Din Melding"></textarea>
+                    <textarea name="Melding" rows="6" placeholder="Melding"></textarea>
                     <button type="submit" class="btn btn2">Send</button>
                 </form>
                 <span id="msg"></span>
@@ -289,7 +314,7 @@
 
 <!-- <----------Copyright--------------->
 <div class="copyright">
-    <p>Stolt medlem av Norges Naprapatforbund <i class="fa-solid fa-hands-holding-circle"></i></p>
+    <p>Autorisert helsepersonell- Naprapat <i class="fa-solid fa-hands-holding-circle"></i></p>
     <p>Copyright © Øen Invest</p>
 </div>
 
@@ -377,6 +402,17 @@
     }
 
 </script>
-
+<!-------Kontakt oss Åpningstider-------->
+<script>
+    let popup = document.getElementById("popup");
+    
+    function openPopup(){
+        popup.classList.add("open-popup");
+    }
+    function closePopup(){
+        popup.classList.remove("open-popup");
+    }
+    </script>
+<!--------------------------------------->
 </body>
 </html>
