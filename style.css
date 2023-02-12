@@ -735,6 +735,7 @@ nav .fas{
     width: 100%;
     display: flex;
     padding: 80px 10%;
+    font-weight: 300;
 }
 #videokonsultasjon .btn{
     margin-left: 0;
@@ -760,6 +761,7 @@ nav .fas{
 }
 .container-wide-img p{
     padding-bottom: 20px;
+    font-size: 19px;
 }
 .container-wide-img a{
     color: #fff;
@@ -847,9 +849,11 @@ nav .fas{
         display: flex;
         flex-direction: column;
         text-align: center;
+        margin: 15% 0;
     }
     .image-container{
         order: -1;
+        margin-bottom: -1%;
     }
     .image-container img{
         width: 100%;
@@ -862,6 +866,7 @@ nav .fas{
         padding: 0 10%;
     }
     .sub-title_white{
+        margin-top: 5%;
         font-size: 35px;
         hyphens: auto;
     }
@@ -1005,6 +1010,11 @@ nav .fas{
 @media only screen and (max-width: 820px){
     #treningsveiledning-priser h1{
         font-size: 35px;
+    }
+    #treningsveiledning-priser .ribbon-wrap{
+        margin-bottom: -48%;
+        top: -25px;
+        left: -34px;
     }
 }
 
