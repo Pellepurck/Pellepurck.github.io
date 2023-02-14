@@ -885,7 +885,103 @@ nav .fas{
 }
 
 
-/* <----------------------------------------------> */
+/* <-----Disorders small info container-----> */
+
+.small-info-container{
+    background: #262626;
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    padding: 30px 10px;
+}
+.small-info-container .sub-title_white{
+    font-size: 3vw;
+}
+.btn-solid{
+    display: block;
+    background: #bfd741;
+    margin: 10px auto;
+    width: fit-content;
+    padding: 14px 50px;
+    border-radius: 30px;
+    text-decoration: none;
+    color: #fff;
+}
+.small-info-container .btn-solid{
+    margin: 10px 0;
+    margin-right: 30px;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+.header-text-info p{
+    padding: 0 50% 0 0;
+}
+.header-text-btn .btn-solid:hover{
+    transform: translateY(-5px);
+    transition: 0.5s;
+    }
+.info-container{
+    margin: 50px 0;
+    font-size: 0.7vw;
+}
+.info-container h1{
+    margin: 10px 0;
+}
+.info-container p{
+    font-size: 19px;
+    padding: 0 50% 0 0;
+    margin: 30px 0;
+}
+.info-container ul{
+    margin: 30px 40px;
+    padding: 0 40% 0 0;
+}
+.info-container li{
+    font-size: 19px;
+    padding: 4px 0;
+}
+.info-container img{
+    margin-top: 20px;
+    max-width: 600px;
+    height: auto;
+    border-radius: 0;
+}
+.image-container p{
+    margin: 10px 0 50px 0;
+}
+.image-container em{
+    color: #ddd;
+}
+
+@media only screen and (max-width: 820px){
+    .small-info-container{
+        width: 100%;
+        margin: 0;
+        padding: 1px 3%;
+    }
+    .small-info-container .sub-title_white{
+        font-size: 50px;
+    }
+    .header-text-info p{
+        padding: 0;
+    }
+    .header-text-info .btn-solid{
+        display: none;
+    }
+    .btn-solid{
+        display: inline-block;
+        padding: 15px 20px;
+    }
+    .info-container{
+        font-size: 14px;
+    }
+    .info-container p{
+        padding: 0;
+    }
+    .info-container ul{
+        padding: 0;
+    }
+}
 
 /*-------------------Behandling-priser/Priser.html----------------- */
 #behandling-priser h1{
