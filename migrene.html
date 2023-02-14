@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunnfjord Naprapatsenter</title>
+    <link rel="icon" type="image/x-icon" href="/favicon/favicon.ico">
+    <link rel="stylesheet" href="/style.css">
+    <script src="https://kit.fontawesome.com/9edf9bd0a7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav id="navbar">
+            <a href="index.html#header">
+            <img src="images/naprapatsenteret logo1024_1 transparent.png" class="logo" alt="Sunnfjord Naprapatsenter logo"></a>
+            <ul id="sidemenu">
+                <li><a href="index.html#header">Hjem</a></li>
+                <li><a href="index.html#vår-klinikk">Om oss</a></li>
+                <li><a href="index.html#services">Tjenester</a></li>
+                <li><a href="priser.html#behandling-priser">Priser</a></li>
+                <li><a href="naprapati.html">Naprapati</a></li>
+                <li><a href="index.html#bedrift">Bedrift</a></li>
+                <li><a href="#kontakt">Kontakt oss</a></li>
+                <li><a href="kontakt.html#microsoft-booking">Project One</a></li>
+                <i class="fas fa-circle-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Sunnfjord<br> <span>Naprapatsenter</span></p>
+            <h1>Anbefalt naprapat i Sunnfjord</h1>
+            <p class="header-info">Vi hjelper deg med det som gjør vondt i kroppen. <br> Kontakt oss i dag for en hyggelig prat, eller bestill time hos våre naprapater via knappene under.</p>
+            <div class="header-text-btn">
+            <a href="#microsoft-booking" class="btn">Book time</a>
+            <a href="#microsoft-booking" class="btn">Videokonsultasjon</a>
+            </div>
+        </div>
+    </div>
+    <div class="header-text_name">
+        <p>DN- Alexander Ask</p>
+    </div>
+</div>
+<!-----------Migrene----------->
+<div class="small-info-container" id="migrene">
+    <div class="header-text-info">
+        <div class="sub-title_white">Migrene</div>
+        <div class="header-text-btn">
+            <a href="kontakt.html#microsoft-booking" class="btn-solid">Book time</a>
+            <a href="naprapati.html#behandlinger" class="btn-solid">Annet vi behandler</a>
+        </div>
+    </div>
+    <div class="info-container">
+        <p>Migrene er en nevrologisk tilstand med multiple symptom. Det kan ramme i alle aldrer. Migrene kan starte i barneårene og vare livet ut eller det kan plutselig oppstå i voksen alder. Damer er oftere rammet. Den største risikofaktoren er om noen i familien din har migrene. De vanligste symptomene er intens hodepine, kvalme, oppkast, vanskeligheter for å snakke, prikkinger i fingrer samt lys og lydfølsom. </p>
+    </div>
+    <div class="info-container">
+        <h1>Diagnostisering:</h1>
+        <p>Diagnostiseringen skal få den hele kliniske historien med symptomer, utelukke andre tilstander og kartlegge stressorene (det som kan utløse migrenen). Stressorer kan være mangel på søvn, høy kaffeinntak, dårlig kosthold, uregelmessig matinntak. Enkelte matvarer kan være triggere som ost, sjokolade, sitrusfrukter, alkohol og rødvin. Andre kan reagere på gjærbakst, kaffe og nøtter. Enkelte tilsetningsstoffer som aspartam og konserveringsmiddel kan fremprovosere anfall hos enkelte.</p>
+        <div class="image-container">
+            <img src="/images/hva_vi_behandler/Hodepine.jpg" alt="">
+        </div>
+    </div>
+    <div class="info-container">
+        <h1>Behandling:</h1>
+        <p>Behandlingen går mye i det å unngå stressfaktorene. Mange er usikre og bekymret for sin migrene. De vil oppleve en bedring av sin migrene gjennom å få den ordentlig diagnostisert og at man ikke frykter den i så stor grad lenger.</p>
+        <p>Gjennom massasje og justering av ledd i nakke og skuldrer opplever mange tydelig og rask effekt. Ofte sitter spenningene suboccipitalt, dvs i muskulaturen het øverst i nakken. Vi skreddersyr treningsprogram som du kan gjennomføre hjemme for å styrke musklene i dette området. I tillegg til dette så kan vi tilby akupunkturbehandling som har dokumentert gode resultater til migrene.</p>
+    </div>
+    <div class="header-text-btn">
+        <a href="naprapati.html#behandlinger" class="btn-solid">Se flere behandlinger</a>
+        <a href="kontakt.html#microsoft-booking" class="btn-solid">Book time</a>
+    </div>
+</div>
+
+
+
+<!----------------Kontakt--------------->
+<div id="kontakt">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title_white">Kontakt oss</h1>
+                <a href="mailto:post@fordenaprapatsenter.no"><i class="fa-solid fa-paper-plane"></i>post@fordenaprapatsenter.no</a>
+                <br>
+                <a href="tel:91818249"><i class="fa-solid fa-square-phone"></i> 91 81 82 49</a>
+                <br>
+                <a href="https://elvetorget.no/portfolio-item/naprapatsenteret/" target="_blank"><i class="fa-solid fa-map-location-dot"></i>Elvetorget - Naustdalsvegen 1B 6800 Førde</a>
+                <div class="opening-hours">
+                    <button type="submit" class="btn" onclick="openPopup()">Åpningstider</button>
+                    <div class="popup" id="popup">
+                        <img src="/images/300x300.jpg" alt="åpningstider">
+                        <h2>Våre åpningstider</h2>
+                        <p>Mandag 09:00 - 15:30</p>
+                        <p>Tirsdag 09:00 - 15:30</p>
+                        <p>Onsdag 09:00 - 15:30</p>
+                        <p>Torsdag 09:00 - 15:30</p>
+                        <p>Fredag 09:00 - 15:30</p>
+                        <p>Lørdag STENGT</p>
+                        <p>Søndag STENGT</p>
+                        <button class="btn" type="button" onclick="closePopup()">Lukk</button>
+                    </div>
+                </div>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/Naprapatsenteret"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://instagram.com/alexanderoenask?igshid=YmMyMTA2M2Y="><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://goo.gl/maps/vAhk8DHjkmy455Vz6"><i class="fa-solid fa-map-location-dot"></i></a>
+                </div>
+                <a href="images/Naprapatsenteret_LAV_1-6-page-001.jpg" download class="btn btn2">Last ned</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Navn" placeholder="Navn" required>
+                    <input type="number" name="Telefon" placeholder="Mobil" required>
+                    <input type="email" name="E-post" placeholder="E-post" required>
+                    <label for="date-input">Ønsket time:</label>
+                    <input type="date" name="Dato" id="date-input">
+                    <textarea name="Melding" rows="6" placeholder="Melding"></textarea>
+                    <button type="submit" class="btn btn2">Send</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <section class="maps">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4874.453644438109!2d5.846000864671536!3d61.452309162465646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x461631627264be17%3A0x5a46dd64dd25c1d2!2sNaprapatsenteret-%20Naprapat%20Alexander%20Ask!5e0!3m2!1sno!2sno!4v1670193161238!5m2!1sno!2sno"  style="border:0" width="600" height="450" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+</div>
+
+<!-----------Testimonial----------->
+<div class="testimonial">
+    <div class="container">
+        <div class="testimonial-text">
+            <div class="user-text active-text">
+                <i class="fa-solid fa-quote-left"></i>
+                <p>Tusen takk Alexander for ei fantastisk behandling av ei kjempevond stortå, eit vondt kne og kranglete rygg. Er god som ny.  Kan anbefale behandlinga , du er kjempeflink.</p>
+                <span>Alexander Øen Ask - PROFF TRIATLET</span>
+            </div>
+            <div class="user-text">
+                <i class="fa-solid fa-quote-left"></i>
+                <p>Alltid like hyggelig og ekstremt dyktig gått til flere naprapater med samme plage, men bare denna som klarer å fikse anbefales på det sterkaste!</p>
+                <span>Sedrik Ullebø - PROFF ATLET</span>
+            </div>
+            <div class="user-text">
+                <i class="fa-solid fa-quote-left"></i>
+                <p>Får kjempegod og effektiv behandling av legg- og hælskade. Anbefalast!</p>
+                <span>Cedrik Fonn Skåre - GoCart sjåfør</span>
+            </div>
+            <div class="user-text">
+                <i class="fa-solid fa-quote-left"></i>
+                <p>Ein meget dyktig naprapat</p>
+                <span>Frode Trælnes - Opplæringskonsulent Byggopp</span>
+            </div>
+            <div class="user-text">
+                <i class="fa-solid fa-quote-left"></i>
+                <p>Dyktig og seriøs kar.</p>
+                <span>Torgeir Mannebrekke - Røyrleggjarmestar</span>
+            </div>
+        </div>
+        <div class="testimonial-pic">
+            <img src="images/testimonial_1.png" class="user-pic active-pic" onclick="showReview()">
+            <img src="images/testimonial_2.png" class="user-pic" onclick="showReview()">
+            <img src="images/testimonial_3.png" class="user-pic" onclick="showReview()">
+            <img src="images/testimonial_4.png" class="user-pic" onclick="showReview()">
+            <img src="images/testimonial_5.png" class="user-pic" onclick="showReview()">
+        </div>
+    </div>
+</div>
+
+<!------------- Copyright ------------>
+<div class="copyright">
+    <p>Autorisert helsepersonell- Naprapat <i class="fa-solid fa-hands-holding-circle"></i></p>
+    <p>Copyright © Øen Invest</p>
+</div>
+
+
+<!-- <------------------Scripts-------------->
+<script>
+
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyp77gd72L0Wwo7eorn8roalQJpQqsG600LD0LDXtxYw_c5VW2UvknpV293JkOF4W536g/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Meldingen er sendt"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+<script>
+    var navbar = document.getElementById("navbar");
+    var sidemenu = document.getElementById("sidemenu");
+
+    window.onscroll = function(){
+        if(window.pageYOffset >= sidemenu.offsetTop){
+            navbar.classList.add("sticky");
+        }
+        else{
+            navbar.classList.remove("sticky");
+        }
+    }
+
+</script>
+
+<script>
+
+    let userTexts = document.getElementsByClassName("user-text");
+    let userPics = document.getElementsByClassName("user-pic");
+
+    function showReview(){
+        for(userPic of userPics){
+            userPic.classList.remove("active-pic");
+        }
+        for(userText of userTexts){
+            userText.classList.remove("active-text");
+        }
+        let i = Array.from(userPics).indexOf(event.target);
+
+        userPics[i].classList.add("active-pic");
+        userTexts[i].classList.add("active-text");
+    }
+
+</script>
+
+<!-------Kontakt oss Åpningstider-------->
+<script>
+    let popup = document.getElementById("popup");
+    
+    function openPopup(){
+        popup.classList.add("open-popup");
+    }
+    function closePopup(){
+        popup.classList.remove("open-popup");
+    }
+    </script>
+<!--------------------------------------->
+
+</body>
+</html>
