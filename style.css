@@ -205,6 +205,11 @@ nav ul li a:hover::after{
     display:block;
 }
 /* ------Hva vi behandler dropdown menu------ */
+.dropdown-menu span{
+    transform: rotate(90deg);
+    font-size: 22px;
+}
+
 .menu-bar{
     width: 80%;
     margin: auto;
@@ -233,30 +238,39 @@ nav ul li a:hover::after{
     text-decoration: none;
     color: #fff;
 }
-.active, .menu-bar ul li:hover{
+.menu-bar ul li.active, .menu-bar ul li:hover{
     background: #bfd741;
-    border-radius: 6px;
 }
 .sub-menu{
+    position: absolute;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+.sub-menu.open-menu{
+    max-height: 100%;
+}
+
+.menu-bar .sub-menu{
     display: none;
     background: #262626;
 }
-.sub-menu ul li{
+.menu-bar .sub-menu ul li{
     width: 100%;
     font-size: 16px;
 }
-.menu-bar ul li:hover .sub-menu{
+.menu-bar ul li .sub-menu{
     display: block;
     position: absolute;
     margin-top: 15px;
     margin-left: -25px;
     width: fit-content;
 }
-.menu-bar ul li:hover .sub-menu ul{
+.menu-bar ul li .sub-menu ul{
     display: block;
     margin: 10px;
 }
-.menu-bar ul li:hover .sub-menu ul li{
+.menu-bar ul li .sub-menu ul li{
     width:100%;
     padding: 10px 0;
     border-bottom: 1px solid #fff;
@@ -280,6 +294,61 @@ nav ul li a:hover::after{
         font-size: 14px;
     }
 }
+/* ----dropdown-menu w3school test------ */
+.menubar2{
+    margin: 0 10%;
+}
+
+.dropbtn {
+    background-color: #262626;
+    color: white;
+    padding: 25px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+  }
+  
+.dropbtn:hover, .dropbtn:focus {
+background-color: #bfd741;
+transition: 0.5s;
+}
+.menubar2-dropdowns{
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+grid-gap: 40px;
+margin: 50px 0 25px 0;
+}
+.dropdown {
+display: inline-grid;
+grid-template-columns: 1fr;
+grid-template-rows: auto 1fr;
+grid-row-gap: 10px;
+}
+
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: #f1f1f1;
+min-width: 160px;
+overflow: auto;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+margin-top: 6%;
+}
+
+.dropdown-content a {
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+
 
 /* ----------Våre ulike behandlingsmetoder---------- */
 #services{
@@ -313,6 +382,7 @@ nav ul li a:hover::after{
     color: #fff;
     font-size: 13px;
     margin-top: 20px;
+    bottom: 0;
     display: inline-block;
 }
 .services-list div:hover{
