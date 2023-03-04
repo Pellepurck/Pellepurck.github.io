@@ -119,6 +119,42 @@ nav ul li a:hover::after{
 .header-text .header-info{
     font-size: 18px;
 }
+/*---Book time knapp fast nedre høyre side--*/
+.down-right-corner-button{
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+.info-solid{
+    background: #bfd741;
+    color: white;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    writing-mode: vertical-rl;
+    padding: 100px 10px;
+    text-decoration: none;
+}
+.down-right-corner-button .btn-solid{
+    display: none;
+}
+@media only screen and (max-width: 820px){
+    .info-solid{
+        display: none;
+    }
+    .down-right-corner-button{
+        transform: none;
+        z-index: 1000;
+    }
+    .down-right-corner-button .btn-solid{
+        display:block;
+        position: fixed;
+        bottom: 15px;
+        right: 25px;
+    }
+}
 
 /*--------------Vår Klinikk/Bedrift----------*/
 #bedrift{
@@ -1059,7 +1095,7 @@ nav .fas{
     }
     .btn-solid{
         display: inline-block;
-        padding: 15px 20px;
+        padding: 15px 30px;
     }
     .info-container{
         font-size: 14px;
