@@ -136,6 +136,8 @@ nav ul li a:hover::after{
     writing-mode: vertical-rl;
     padding: 100px 10px;
     text-decoration: none;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
 }
 .down-right-corner-button .btn-solid{
     display: none;
