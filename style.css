@@ -1086,7 +1086,7 @@ nav .fas{
         margin: 0;
         padding: 1px 3%;
     }
-    .small-info-container .sub-title_white{
+    .small-einfo-container .sub-title_white{
         font-size: 50px;
     }
     .header-text-info p{
@@ -1114,6 +1114,10 @@ nav .fas{
 #behandling-priser h1{
     text-align: center;
     padding-bottom: 40px;
+}
+#injeksjonsterapi h4{
+    margin-top: 10px;
+    font-weight: 100;
 }
 
 
@@ -1204,7 +1208,7 @@ nav .fas{
 }
 .price-col ul{
     text-align: left;
-    margin: 20px 0;
+    margin: 30px 0;
     color: #ddd;
     list-style: none;
 }
