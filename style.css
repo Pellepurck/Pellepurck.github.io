@@ -138,6 +138,7 @@ nav ul li a:hover::after{
     text-decoration: none;
     border-bottom-left-radius: 10px;
     border-top-left-radius: 10px;
+    box-shadow: 0px 8px 40px rgba(0, 0, 0, 0.1);
 }
 .down-right-corner-button .btn-solid{
     display: none;
@@ -155,6 +156,8 @@ nav ul li a:hover::after{
         position: fixed;
         bottom: 15px;
         right: 25px;
+        /* border: 2px solid black; */
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
     }
 }
 
