@@ -386,13 +386,14 @@
                 <!-- <a href="images/Naprapatsenteret_LAV_1-6-page-001.jpg" download class="btn btn2">Last ned</a> -->
             </div>
             <div class="contact-right">
-                <form name="submit-to-google-sheet">
+                <form action="https://formsubmit.co/post@fordenaprapatsenter.no" method="POST">
+                    <input type="hidden" name="_captcha" value="false">
                     <input type="text" name="Navn" placeholder="Navn" required>
                     <input type="number" name="Telefon" placeholder="Mobil" required>
                     <input type="email" name="E-post" placeholder="E-post" required>
-                    <label for="date-input">Ønsket time:</label>
-                    <input type="date" name="Dato" id="date-input">
-                    <textarea name="Melding" rows="6" placeholder="Melding"></textarea>
+                    <!-- <label for="date-input">Ønsket time:</label>
+                    <input type="date" name="Dato" id="date-input"> -->
+                    <textarea name="Melding" rows="6" placeholder="Melding" maxlength="300"></textarea>
                     <button type="submit" class="btn btn2">Send</button>
                 </form>
                 <span id="msg"></span>
@@ -417,22 +418,22 @@
             <div class="user-text">
                 <i class="fa-solid fa-quote-left"></i>
                 <p>Alltid like hyggelig og ekstremt dyktig gått til flere naprapater med samme plage, men bare denna som klarer å fikse anbefales på det sterkaste!</p>
-                <span>Sedrik Ullebø - PROFF ATLET</span>
+                <span>Sedrik Ullebø</span>
             </div>
             <div class="user-text">
                 <i class="fa-solid fa-quote-left"></i>
                 <p>Får kjempegod og effektiv behandling av legg- og hælskade. Anbefalast!</p>
-                <span>Cedrik Fonn Skåre - GoCart sjåfør</span>
+                <span>Cedrik Fonn Skåre</span>
             </div>
             <div class="user-text">
                 <i class="fa-solid fa-quote-left"></i>
                 <p>Ein meget dyktig naprapat</p>
-                <span>Frode Trælnes - Opplæringskonsulent Byggopp</span>
+                <span>Frode Trælnes</span>
             </div>
             <div class="user-text">
                 <i class="fa-solid fa-quote-left"></i>
                 <p>Dyktig og seriøs kar.</p>
-                <span>Torgeir Mannebrekke - Røyrleggjarmestar</span>
+                <span>Torgeir Mannebrekke</span>
             </div>
         </div>
         <div class="testimonial-pic">
