@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <form  onsubmit="sendEmail(); reset(); return false;">
+            <h3>Get in touch</h3>
+            <input type="text" id="name" placeholder="Your name" required>
+            <input type="email" id="email" placeholder="Email id" required>
+            <input type="text" id="phone" placeholder="Phone no." required>
+            <textarea id="message" rows="4" placeholder="How can we help you?"></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail(){
+            Email.send({
+                Host : "smtp.elasticemail.com",
+                Username : "post@fordenaprapatsenter.no",
+                Password : "53FC863588FF65F0D6CB7C1B7777EE8F6935",
+                To : 'post@fordenaprapatsenter.no',
+                From : "post@fordenaprapatsenter.no",
+                Subject : "Ny kontaktskjema",
+                Body : "Navn: " + document.getElementById("name").value
+                    + "<br> E-post: " + document.getElementById("email").value
+                    + "<br> Mobil: " + document.getElementById("phone").value
+                    + "<br> Melding: " + document.getElementById("message").value
+            }).then(
+            message => alert("Melding sendt! Takk for din henvendelse.")
+            );
+        }
+    </script>
+</body>
+</html>

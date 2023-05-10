@@ -429,12 +429,14 @@
             <div class="contact-right">
                 <form action="https://formsubmit.co/post@fordenaprapatsenter.no" method="POST">
                     <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="https://sunnfjord-naprapatsenter.cf/kontaktform.html">
+                    <input type="hidden" name="_subject" value="Ny henvendelse kontaktskjema">
                     <input type="text" name="Navn" placeholder="Navn" required>
                     <input type="number" name="Telefon" placeholder="Mobil" required>
                     <input type="email" name="E-post" placeholder="E-post" required>
                     <!-- <label for="date-input">Ønsket time:</label>
                     <input type="date" name="Dato" id="date-input"> -->
-                    <textarea name="Melding" rows="6" placeholder="Melding" maxlength="300"></textarea>
+                    <textarea name="message" rows="6" placeholder="Melding" maxlength="300"></textarea>
                     <button type="submit" class="btn btn2">Send</button>
                 </form>
                 <span id="msg"></span>
@@ -523,6 +525,25 @@
     }
 
 </script>
+<!-- SmtpJS form -->
+<!-- <script src="https://smtpjs.com/v3/smtp.js"></script>
+<script>
+    function sendEmail(){
+        Email.send({
+            Host : "smtp.gmail.com",
+            Username : "henrikblablabla@gmail.com",
+            Password : "hjpgqtlsnhzeyvyr",
+            To : 'henrik.oen@hotmail.com',
+            From : document.getElementById("email").value,
+            Subject : "Ny kontaktform",
+            Body : "And this is the body"
+        }).then(
+        message => alert(message)
+        );
+    }
+</script> -->
+<!-- SmtpJS form -->
+
 <script>
     const scriptURL = 'https://script.google.com/macros/s/AKfycbyp77gd72L0Wwo7eorn8roalQJpQqsG600LD0LDXtxYw_c5VW2UvknpV293JkOF4W536g/exec'
     const form = document.forms['submit-to-google-sheet']
