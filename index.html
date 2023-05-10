@@ -430,8 +430,8 @@
                 <form action="https://formsubmit.co/post@fordenaprapatsenter.no" method="POST">
                     <input type="hidden" name="_captcha" value="false">
                     <input type="hidden" name="_next" value="https://sunnfjord-naprapatsenter.cf/kontaktform.html">
-                    <input type="hidden" name="_subject" value="Ny henvendelse kontaktskjema">
-                    <input type="text" name="Navn" placeholder="Navn" required>
+                    <input type="hidden" name="_subject" id="subject-input" value= "Nytt kontaktskjema">
+                    <input type="text" name="Navn" id="navn-input" placeholder="Navn" required>
                     <input type="number" name="Telefon" placeholder="Mobil" required>
                     <input type="email" name="E-post" placeholder="E-post" required>
                     <!-- <label for="date-input">Ønsket time:</label>
@@ -525,24 +525,16 @@
     }
 
 </script>
-<!-- SmtpJS form -->
-<!-- <script src="https://smtpjs.com/v3/smtp.js"></script>
+<!-- Formsubmit -->
 <script>
-    function sendEmail(){
-        Email.send({
-            Host : "smtp.gmail.com",
-            Username : "henrikblablabla@gmail.com",
-            Password : "hjpgqtlsnhzeyvyr",
-            To : 'henrik.oen@hotmail.com',
-            From : document.getElementById("email").value,
-            Subject : "Ny kontaktform",
-            Body : "And this is the body"
-        }).then(
-        message => alert(message)
-        );
-    }
-</script> -->
-<!-- SmtpJS form -->
+    const navnInput = document.getElementById('navn-input');
+    const subjectInput = document.getElementById('subject-input');
+    
+    navnInput.addEventListener('input', () => {
+      subjectInput.value = `Nytt kontaktskjema fra ${navnInput.value}`;
+    });
+  </script>
+<!-- Formsubmit -->
 
 <script>
     const scriptURL = 'https://script.google.com/macros/s/AKfycbyp77gd72L0Wwo7eorn8roalQJpQqsG600LD0LDXtxYw_c5VW2UvknpV293JkOF4W536g/exec'
