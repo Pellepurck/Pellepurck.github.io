@@ -96,7 +96,7 @@ nav ul li a:hover::after{
     color: #080808;
     font-size: 20px;
     font-style: oblique;
-    position: absolute;
+    position:absolute;
     bottom: 5px;
     left: 5px;
 }
@@ -601,7 +601,7 @@ nav .fas{
     }
     .header-text_name{
         font-size: 16px;
-        bottom: 1px;
+        bottom: 0;
         left: 0;
     }
     .header-text-btn{
