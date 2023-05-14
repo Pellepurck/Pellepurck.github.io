@@ -8,6 +8,16 @@
     <link rel="icon" type="image/x-icon" href="/favicon/favicon.ico">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/9edf9bd0a7.js" crossorigin="anonymous"></script>
+    <!-- <script src="script.js" defer></script> -->
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HDDH89H03B"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-HDDH89H03B');
+    </script>
 </head>
 <body>
 <div id="header">
@@ -37,10 +47,11 @@
             <a href="https://napforde.bestille.no/" target="_blank" class="btn">Videokonsultasjon</a>
             </div>
         </div>
+        <div class="header-text_name">
+            <p>DN- Alexander Ask</p>
+        </div>
     </div>
-    <div class="header-text_name">
-        <p>DN- Alexander Ask</p>
-    </div>
+    
 </div>
 <!-- Book time knapp fast nedre høyre side -->
 
@@ -181,7 +192,7 @@
                     <li>Oppsett av treningsprogram</li>
                     <li>Treningsprogram for styrketrening</li>
                 </ul>
-                <a href="#" class="btn">Book her</a>
+                <a href="#kontakt" class="btn">Kontakt oss</a>
             </div>
             <div class="price-col">
                 <p>Nett-Coaching</p>
@@ -191,7 +202,7 @@
                     <li>Triathlon</li>
                     <li>Løping-sykling-svømming-Styrketrening</li>
                 </ul>
-                <a href="#" class="btn">Book her</a>
+                <a href="#kontakt" class="btn">Kontakt oss</a>
             </div>
         </div>
     </div>
@@ -202,7 +213,7 @@
         <div class="row">
             <div class="contact-left">
                 <h1 class="sub-title_white">Kontakt oss</h1>
-                <a href="mailto:post@fordenaprapatsenter.no"><i class="fa-solid fa-paper-plane"></i>post@fordenaprapatsenter.no</a>
+                <a href="mailto:post@sunnfjord-naprapatsenter.no"><i class="fa-solid fa-paper-plane"></i>post@sunnfjord-naprapatsenter.no</a>
                 <br>
                 <a href="tel:91818249"><i class="fa-solid fa-square-phone"></i> 91 81 82 49</a>
                 <br>
@@ -232,15 +243,16 @@
             <div class="contact-right">
                 <form action="https://formsubmit.co/post@fordenaprapatsenter.no" method="POST">
                     <input type="hidden" name="_captcha" value="false">
-                    <input type="text" name="Navn" placeholder="Navn" required>
+                    <input type="hidden" name="_next" value="https://sunnfjord-naprapatsenter.no/takk-for-din-henvendelse.html">
+                    <input type="hidden" name="_subject" id="subject-input" value= "Nytt kontaktskjema">
+                    <input type="text" name="Navn" id="navn-input" placeholder="Navn" required>
                     <input type="number" name="Telefon" placeholder="Mobil" required>
                     <input type="email" name="E-post" placeholder="E-post" required>
                     <!-- <label for="date-input">Ønsket time:</label>
                     <input type="date" name="Dato" id="date-input"> -->
-                    <textarea name="Melding" rows="6" placeholder="Melding" maxlength="300"></textarea>
+                    <textarea name="message" rows="6" placeholder="Melding" maxlength="300"></textarea>
                     <button type="submit" class="btn btn2">Send</button>
                 </form>
-                <span id="msg"></span>
             </div>
         </div>
     </div>
@@ -325,9 +337,17 @@
     }
 
 </script>
+<!-- Formsubmit -->
 <script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbyp77gd72L0Wwo7eorn8roalQJpQqsG600LD0LDXtxYw_c5VW2UvknpV293JkOF4W536g/exec'
-    const form = document.forms['submit-to-google-sheet']
+    const navnInput = document.getElementById('navn-input');
+    const subjectInput = document.getElementById('subject-input');
+    
+    navnInput.addEventListener('input', () => {
+      subjectInput.value = `Nytt kontaktskjema fra ${navnInput.value}`;
+    });
+  </script>
+<!-- Formsubmit -->
+<script>
     const msg = document.getElementById("msg")
   
     form.addEventListener('submit', e => {

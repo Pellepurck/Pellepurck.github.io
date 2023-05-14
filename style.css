@@ -641,6 +641,7 @@ nav .fas{
         cursor: pointer;
     }
     .sub-title_white{
+        margin-top: 5%;
         font-size: 40px;
         hyphens: manual;
     }
@@ -1045,7 +1046,7 @@ nav .fas{
     }
 .info-container{
     margin: 50px 0;
-    font-size: 0.7vw;
+    font-size: 18px;
 }
 .info-container h1{
     margin: 10px 0;
@@ -1053,6 +1054,7 @@ nav .fas{
 }
 .info-container h3{
     margin: 40px 0 0 0;
+    font-size: 20px;
 }
 .info-container p{
     font-size: 19px;
@@ -1090,7 +1092,7 @@ nav .fas{
         margin: 0;
         padding: 1px 3%;
     }
-    .small-einfo-container .sub-title_white{
+    .small-info-container .sub-title_white{
         font-size: 50px;
     }
     .header-text-info p{
@@ -1105,6 +1107,9 @@ nav .fas{
     }
     .info-container{
         font-size: 14px;
+    }
+    .info-container h3{
+        font-size: 19px;
     }
     .info-container p{
         padding: 0;
